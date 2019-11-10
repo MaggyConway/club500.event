@@ -23,7 +23,7 @@
                 <header class="row">
                     <div class="col-6 section__content--left">
                         <div class="logo"></div>
-                        <div>
+                        <div class="box">
                             <h1>Итоговый слет #15</h1>
                             <p>Попади на&nbsp;самую масштабную встречу 2019 года клуба миллионеров Club 500</p>
                             <a href="#" class="sign_up">Зарегистрироваться<span></span></a>
@@ -32,8 +32,27 @@
                     <div class="col-6 section__content--right">
                         <div class="right--wrap"></div>
                         <div class="right--img"></div>
-                    </div>
-                </header>
+
+                        <div id="counter">
+                            <div class="counter__label">До начала встречи осталось:</div>
+                            <ul class="countdown">
+                                <li>
+                                    <span class="days">00</span>
+                                </li>
+                                <li>
+                                    <span class="hours">00</span>
+                                </li>
+                                <li>
+                                    <span class="minutes">00</span>
+                                </li>
+                                <!-- <li>
+                                    <span class="seconds">00</span>
+                                </li> -->
+                            </ul>
+                            <div class="counter__date">16.12.2019</div>
+                        </div>
+                  </div>
+              </header>
             </div>
         </div>
         <div class="section section_2" id="section-2">
@@ -49,8 +68,10 @@
                         </p>
                     </div>
                     <div class="col-6 section__content--right">
-                        <div class="right--wrap"></div>
-                        <div class="right--img"></div>
+                        <div class="block14">
+                            <div class="right--wrap"></div>
+                            <div class="right--img"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -172,6 +193,7 @@
     <script src="/js/vendor/fullpage/dist/fullpage.min.js"></script>
     <script src="/js/vendor/fullpage/dist/fullpage.extensions.min.js"></script>
     <script src="/js/jquery.maskedinput.min.js"></script>
+    <script src="/js/jquery.downCount.js"></script>
     <script src="/js/app.js"></script>
 </body>
 </html>
