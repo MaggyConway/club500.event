@@ -583,26 +583,6 @@ h2 {
     }
 }
 
-
-
-// @keyframes txt_line {
-//     0% {
-
-//     }
-//     100% {
-        
-//     }
-// }
-// @-webkit-keyframes txt_line {
-//     0% {
-
-//     }
-//     100% {
-        
-//     }
-// }
-
-
 .section_3 {
     background: #1C1919;
     .section__content--left {
@@ -695,8 +675,157 @@ h2 {
 }
 
 .section_4 {
-    background: #0E0E0E;
+    background: #fff;
+    .container {
+        padding-left: 10vw !important;
+        padding-right: 10vw !important;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: center;
+                justify-content: center;
+        position: relative;
+        height: 100vh;
+    }
+    .first {
+        font-weight: 200;
+        color: #1C1919;
+        font-size: 6vh;
+        position: relative;
+        bottom: -200%;
+
+        -webkit-animation: blue_txt_to_top 1s ease-in-out;
+        -moz-animation: blue_txt_to_top 1s ease-in-out;
+         -o-animation: blue_txt_to_top 1s ease-in-out;
+            animation: blue_txt_to_top 1s ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+    }
+    .second {
+        p:first-of-type {
+            font-size: 14vh;
+            color: white;
+            text-shadow:
+            -1px -1px 0 #1E2BF4,
+            1px -1px 0 #1E2BF4,
+            -1px 1px 0 #1E2BF4,
+            1px 1px 0 #1E2BF4;
+            font-weight: 800;
+            text-transform: uppercase;
+            line-height: 134%;
+            position: relative;
+            bottom: -200%;
+            
+            -webkit-animation: blue_txt_to_top 1s ease-in-out;
+            -moz-animation: blue_txt_to_top 1s ease-in-out;
+             -o-animation: blue_txt_to_top 1s ease-in-out;
+                animation: blue_txt_to_top 1s ease-in-out;
+            animation-iteration-count: 1;
+            animation-delay: 6s;
+            animation-fill-mode: forwards;
+                
+
+        }
+        p:last-of-type {
+            font-weight: 200;
+            color: #1C1919;
+            max-width: 680px;
+            font-size: 4vh;
+            position: relative;
+            bottom: -200%;
+            
+            -webkit-animation: blue_txt_to_top 1s ease-in-out;
+            -moz-animation: blue_txt_to_top 1s ease-in-out;
+             -o-animation: blue_txt_to_top 1s ease-in-out;
+                animation: blue_txt_to_top 1s ease-in-out;
+            animation-iteration-count: 1;
+            animation-delay: 7s;
+            animation-fill-mode: forwards;
+            
+            &:after {
+                position: absolute;
+                content: "";
+                width: 0%;
+                height: 13px;
+                background: #1E2BF4;
+                left: 0;
+                bottom: -70px;
+                
+                -webkit-animation: blue_line 1s ease-in-out;
+                -moz-animation: blue_line 1s ease-in-out;
+                 -o-animation: blue_line 1s ease-in-out;
+                    animation: blue_line 1s ease-in-out;
+                animation-iteration-count: 1;
+                animation-delay: 8s;
+                animation-fill-mode: forwards;
+                
+
+            }
+        }
+        p span {
+            color: #1E2BF4;
+            text-shadow: none;            
+        }
+    }
 }
+
+
+@keyframes blue_line {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@-webkit-keyframes blue_line {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+@keyframes blue_txt_to_top {
+    0% {
+        bottom: -200%;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@-webkit-keyframes blue_txt_to_top {
+    0% {
+        bottom: -200%;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+// @keyframes blue_txt_to_top {
+//     0% {
+
+//     }
+//     100% {
+        
+//     }
+// }
+// @-webkit-keyframes blue_txt_to_top {
+//     0% {
+
+//     }
+//     100% {
+        
+//     }
+// }
+
+
+
 .section_5 {
     background: #1E2BF4;
 }
