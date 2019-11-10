@@ -255,9 +255,22 @@ h2 {
         -webkit-justify-content: center;
                 justify-content: center;
         h2 {
+            position: relative;
             color: #1C1919;
             letter-spacing: 0.02em;
             font-weight: 800;
+            top: -100px;
+
+            -webkit-animation: to-bottom 1s ease-in-out;
+            -moz-animation: to-bottom 1s ease-in-out;
+             -o-animation: to-bottom 1s ease-in-out;
+                animation: to-bottom 1s ease-in-out;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        
+
+            
             .medium {
                 letter-spacing: 0.02em;
                 color: #1C1919;
@@ -284,10 +297,21 @@ h2 {
                 position: absolute;
                 content: "";
                 background: #1C1919;
-                width: 70%;
+                width: 30%;
                 height: 12px;
                 bottom: -100px;
                 left: 0;
+                
+
+                -webkit-animation: txt_line 1s ease-in-out;
+                -moz-animation: txt_line 1s ease-in-out;
+                 -o-animation: txt_line 1s ease-in-out;
+                    animation: txt_line 1s ease-in-out;
+                animation-iteration-count: 1;
+                animation-delay: 1.5s;
+                animation-fill-mode: forwards;
+        
+
             }
         }
         .medium, .small, .section__content--txt {
@@ -301,33 +325,76 @@ h2 {
         -webkit-justify-content: center;
                 justify-content: center;
         position: absolute;
-        left: 800px;
+        
+        max-width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        padding-right: 0 !important;
+        
+        -webkit-animation: parent-img 0.5s ease-in-out;
+        -moz-animation: parent-img 0.5s ease-in-out;
+         -o-animation: parent-img 0.5s ease-in-out;
+            animation: parent-img 0.5s ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 1.3s;
+        animation-fill-mode: forwards;
+                
+
         .block14 {
-            min-height: 460px;
-            min-width: 965px;
             position: relative;
+            z-index: 1000;
+            min-width: 100vw;
+            min-height: 100vh;
+            top: 0;
             left: 0;
-            top: 40px;
-            overflow: hidden;
+            
+            -webkit-animation: block14 1s ease-in-out;
+            -moz-animation: block14 1s ease-in-out;
+             -o-animation: block14 1s ease-in-out;
+                animation: block14 1s ease-in-out;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+
             .right--img {
                 background: url("/img/photo14.jpg") no-repeat center center;
-                width: 605px;
-                height: 400px;
                 -webkit-background-size: cover;
                      -o-background-size: cover;
                         background-size: cover;
                 position: absolute;
-                z-index: 200;
+                
+                z-index: 1000;
+                width: 100vw;
+                height: 100vh;
                 top: 0;
-                right: 0;
+                left: 0;
+                
+                -webkit-animation: section2img 1s ease-in-out;
+                -moz-animation: section2img 1s ease-in-out;
+                 -o-animation: section2img 1s ease-in-out;
+                    animation: section2img 1s ease-in-out;
+                animation-iteration-count: 1;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+            
                 &:after {
                     content: "#14";
                     position: absolute;
                     font-weight: 800;
                     color: #FFFFFF;
                     font-size: 10vh;
-                    bottom: -65px;
-                    right: 70px;
+                    bottom: 300px;
+                    right: 150px;
+                    
+
+                    -webkit-animation: number14 1s ease-in-out;
+                    -moz-animation: number14 1s ease-in-out;
+                     -o-animation: number14 1s ease-in-out;
+                        animation: number14 1s ease-in-out;
+                    animation-iteration-count: 1;
+                    animation-delay: 1s;
+                    animation-fill-mode: forwards;
                 }
             }
             .right--wrap {
@@ -356,6 +423,184 @@ h2 {
         }
     }
 }
+
+
+@keyframes parent-img {
+    0% {
+        max-width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        //padding-right: 0 !important;
+    }
+    100% {
+        max-width: 50%;
+        padding-right: 10vw!important;
+        left: 800px;
+    }
+}
+@-webkit-keyframes parent-img {
+    0% {
+        max-width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        padding-right: 0 !important;
+    }
+    100% {
+        max-width: 50%;
+        padding-right: 10vw!important;
+        left: 800px;
+    }
+}
+
+
+@keyframes section2img {
+    0% {
+        z-index: 1000;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        right: 0;
+        left: unset;
+        width: 605px;
+        height: 400px;
+        z-index: 200;
+    }
+}
+@-webkit-keyframes section2img {
+    0% {
+        z-index: 1000;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        right: 0;
+        left: unset;
+        width: 605px;
+        height: 400px;
+        z-index: 200;
+    }
+}
+
+
+@keyframes block14 {
+    0% {
+        z-index: 1000;
+        min-width: 100vw;
+        min-height: 100vh;
+        top: 0;
+        left: 0;
+    }
+    100% {
+        min-height: 460px;
+        min-width: 965px;
+        z-index: unset;
+        left: 0;
+        top: 40px;
+    }
+}
+@-webkit-keyframes block14 {
+    0% {
+        z-index: 1000;
+        min-width: 100vw;
+        min-height: 100vh;
+        top: 0;
+        left: 0;
+    }
+    100% {
+        min-height: 460px;
+        min-width: 965px;
+        z-index: unset;
+        left: 0;
+        top: 40px;  
+    }
+}
+
+
+@keyframes number14 {
+    0% {
+        bottom: 300px;
+        right: 150px;
+    }
+    100% {
+        bottom: -65px;
+        right: 70px;
+    }
+}
+@-webkit-keyframes number14 {
+    0% {
+        bottom: 300px;
+        right: 150px;
+    }
+    100% {
+        bottom: -65px;
+        right: 70px;
+    }
+}
+
+
+@keyframes to-bottom {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@-webkit-keyframes to-bottom {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+
+
+@keyframes txt_line {
+    0% {
+        width: 30%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@-webkit-keyframes txt_line {
+    0% {
+        width: 30%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+
+
+// @keyframes txt_line {
+//     0% {
+
+//     }
+//     100% {
+        
+//     }
+// }
+// @-webkit-keyframes txt_line {
+//     0% {
+
+//     }
+//     100% {
+        
+//     }
+// }
 
 
 .section_3 {
